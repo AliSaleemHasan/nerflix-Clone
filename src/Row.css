@@ -1,0 +1,33 @@
+.row {
+  margin-bottom: 2vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+.row > h2 {
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.row__info {
+  display: flex;
+}
+
+.row__img {
+  object-fit: contain;
+  padding: 0.5vw;
+  transition: all 490ms;
+}
+.row__big {
+  max-height: 150px;
+  object-fit: contain;
+  padding: 0.6vw;
+}
+
+.row__info > img:hover {
+  transform: scale(1.2);
+}
